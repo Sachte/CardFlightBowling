@@ -1,4 +1,4 @@
-##Running
+# Running
 To run the application,
 1) open as a maven project and right click main and run, for example in IntelliJ
     
@@ -7,7 +7,7 @@ or
 2)run included jar file:
 java -jar target/bowling-0.0.1-SNAPSHOT.jar
 
-##Endpoints
+# Endpoints
 There are 3 endpoints:
 POST /bowling/newGame/{gameName} 
     creates new Game with game name: gameName
@@ -21,24 +21,24 @@ GET /bowling/scoreboard/{gameName}
     note: if frameScore is -1, then frame's score isn't finalized yet, for example
     in the case of a strike, but the next frame hasn't finished.
 
-##Project Structure
+# Project Structure
 main:
-BowlingApplication is the main class.
-BowlingController contains the APIs and helper methods to run the business logic.
-BowlingRepository stores active games in a HashMap, this can be substituted for MongoDB etc.
+* BowlingApplication is the main class.
+* BowlingController contains the APIs and helper methods to run the business logic.
+* BowlingRepository stores active games in a HashMap, this can be substituted for MongoDB etc.
 
 model:
-Game represents a single game of bowling, consists of Frames.
-Frame represents a single frame, consists of Rolls.
-Roll represents an individual roll: an int value.
-Scoreboard represents the information needed to create a scoreboard, including a list of ScoreBoardFrames
+* Game represents a single game of bowling, consists of Frames.
+* Frame represents a single frame, consists of Rolls.
+* Roll represents an individual roll: an int value.
+* Scoreboard represents the information needed to create a scoreboard, including a list of ScoreBoardFrames
 with a string moves, and frameScore.
 
 test:
-contains tests for business logic.
+* contains tests for business logic.
 
 
-#Original Instructions:
+# Original Instructions:
 # Bowling Scoring Challenge
 
 Design an interface to track the score of a single game of bowling. The interface will accept the result of each ball bowled and calculate the correct score, including spares and strikes. The interface must also indicate if the 10th frame includes a third ball.
