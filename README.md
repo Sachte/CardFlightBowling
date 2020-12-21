@@ -9,7 +9,7 @@ java -jar target/bowling-0.0.1-SNAPSHOT.jar
 
 # Endpoints
 There are 3 endpoints:
-POST /bowling/newGame/{gameName} 
+POST /bowling/newGame/{gameName}
     creates new Game with game name: gameName
     example: curl -X POST localhost:8080/bowling/newGame/game1
 POST /bowling/roll/{gameName}/{roll}
