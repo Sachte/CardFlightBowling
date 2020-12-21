@@ -4,7 +4,7 @@ To run the application,
     
 or
 
-2)run included jar file:
+2) run included jar file:
 java -jar target/bowling-0.0.1-SNAPSHOT.jar
 
 # Endpoints
