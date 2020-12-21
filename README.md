@@ -9,16 +9,16 @@ java -jar target/bowling-0.0.1-SNAPSHOT.jar
 
 # Endpoints
 There are 3 endpoints:
-POST /bowling/newGame/{gameName}
-    creates new Game with game name: gameName
-    example: curl -X POST localhost:8080/bowling/newGame/game1
-POST /bowling/roll/{gameName}/{roll}
-    rolls a score roll for game gameName
-    example: curl -X POST localhost:8080/bowling/roll/game1/4
-GET /bowling/scoreboard/{gameName}
-    retrieves scoreboard for game gameName
-    example: curl localhost:8080/bowling/scoreboard/game1
-    note: if frameScore is -1, then frame's score isn't finalized yet, for example
+1) POST /bowling/newGame/{gameName}
+    * creates new Game with game name: gameName
+    * example: curl -X POST localhost:8080/bowling/newGame/game1
+2) POST /bowling/roll/{gameName}/{roll}
+    * rolls a score roll for game gameName
+    * example: curl -X POST localhost:8080/bowling/roll/game1/4
+3) GET /bowling/scoreboard/{gameName}
+    * retrieves scoreboard for game gameName
+    * example: curl localhost:8080/bowling/scoreboard/game1
+    * note: if frameScore is -1, then frame's score isn't finalized yet, for example
     in the case of a strike, but the next frame hasn't finished.
 
 # Project Structure
