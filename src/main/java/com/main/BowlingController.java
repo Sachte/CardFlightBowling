@@ -174,12 +174,12 @@ public class BowlingController {
         return game;
     }
 
-    /*returns a String representation of the scoreboard, with
+    /*returns a representation of the scoreboard, with
         X to represent a strike
         / to represent a spare
         - to represent no pins knocked down
         and two rolls per frame
-
+        
         precondition: game is a valid Game
      */
     private Scoreboard buildScoreBoardString(Game game){
